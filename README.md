@@ -1,4 +1,4 @@
-# A defect-hunting pipeline
+# Defect Hunting pipeline
 
 *(The search is not deterministic. The gate is.)*
 
