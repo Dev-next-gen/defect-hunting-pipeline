@@ -1,0 +1,66 @@
+# CodeHunter
+
+CodeHunter is a defect-hunting pipeline. It reads open-source codebases it does not own,
+isolates real defects, proves each one with a reproduction that fails before the patch and
+passes after, and opens the fix upstream under the rules of the project receiving it.
+
+It is built and operated by one person, [Leo Camus](https://github.com/Dev-next-gen), on
+hardware he owns. Every figure below is measured, and every one of them can be checked against
+public GitHub data by anyone who wants to.
+
+## Seven days
+
+10–16 September 2026, one week of continuous operation.
+
+| | |
+|---|---|
+| Agent runs | **357** over 151 hours |
+| Pull requests opened, proven, written up | **181** across **102** repositories |
+| Merged | **83**, in **44** projects nobody here maintains |
+| Closed without merging | **7** |
+| Acceptance among decided pull requests | **92.2 %** |
+| Cost | **$909** total, **$10.95** per merged fix |
+| Runs that find nothing | **29 %** — they are included in the cost above |
+
+Checkable: [merged](https://github.com/pulls?q=is%3Amerged+author%3ADev-next-gen) ·
+[closed without merging](https://github.com/pulls?q=is%3Apr+is%3Aclosed+is%3Aunmerged+author%3ADev-next-gen).
+Those searches cover the whole account, so they include work that predates the pipeline.
+
+The hardest review it has passed is the JavaScript engine **v8/v8**: two changelists through
+Gerrit, CLA and committer review, into the ECMA-262 implementation behind Chrome and Node.js.
+The fix it would point to first is **[NASA F´ #5972](https://github.com/nasa/fprime/pull/5972)**,
+where a framer dropped its status signal on a failed buffer allocation and stalled the downlink
+chain instead of reporting the error.
+
+## Two rules decide what is allowed to leave
+
+1. **Nothing ships without a reproduction that fails before the patch and passes after.**
+   Not a plausible argument, not a static-analysis hit, not a linter opinion. A failing test
+   that turns green, run in the project's own environment.
+2. **Nothing ships until the receiving project's contribution rules are satisfied.**
+   Their rules beat ours, always, without asking. If a project forbids naming an AI tool, the
+   disclosure line comes off. If it requires a trailer, a template section, a signed agreement
+   or an accepted issue first, that comes first — or nothing goes out at all.
+
+Every pull request says where it came from, in one sentence, in the body:
+
+> Found by a defect-hunting pipeline I build and run
+> ([Dev-next-gen](https://github.com/Dev-next-gen)), using Claude Code with Anthropic's
+> Claude Opus 5.
+
+That line is not optional, and it is not marketing. A maintainer deciding how much of their
+attention to spend is entitled to know what they are reading.
+
+## The rest
+
+- [Thesis](docs/thesis.md) — why the bottleneck everyone expects is not the one that shows up,
+  and the one open question that decides whether any of this scales.
+- [Evidence](docs/evidence.md) — the cases behind the claims, with links.
+- [Disclosure](docs/disclosure.md) — what happens when a finding should not be published.
+- [Roadmap](docs/roadmap.md) — what would have to be true for this to run at a different size.
+
+## What this repository is not
+
+This repository describes what the system produces, the rules it obeys, and the evidence for
+its claims. It does not describe how it is built. There is no source, no architecture, no
+prompts and no operational detail here, and there will not be.
