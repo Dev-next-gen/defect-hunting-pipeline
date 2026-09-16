@@ -1,8 +1,16 @@
-# CodeHunter
+# A defect-hunting pipeline
 
-CodeHunter is a defect-hunting pipeline. It reads open-source codebases it does not own,
-isolates real defects, proves each one with a reproduction that fails before the patch and
-passes after, and opens the fix upstream under the rules of the project receiving it.
+*(The search is not deterministic. The gate is.)*
+
+It reads open-source codebases it does not own, isolates real defects, proves each one with a
+reproduction that fails before the patch and passes after, and opens the fix upstream under the
+rules of the project receiving it.
+
+The finding is the work of a language model, so it is not repeatable: run it again tomorrow on
+the same repository and it will not surface the same defects. What is repeatable is the gate
+every candidate has to pass — a test that fails on the unpatched tree, passes on the patched
+one, in the project's own environment, and that anyone can re-run to the same result. That
+distinction is the whole design. Nothing downstream of it is trusted because a model said so.
 
 It is built and operated by one person, [Leo Camus](https://github.com/Dev-next-gen), on
 hardware he owns. Every figure below is measured, and every one of them can be checked against
