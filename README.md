@@ -36,9 +36,16 @@ Those searches cover the whole account, so they include work that predates the p
 
 Those figures were counted on 16 September at about 18:00 UTC, as this page was being written,
 which is why they stop mid-day rather than at midnight: 14 more pull requests went out that
-evening. Re-counting the same week on 18 September gives **195 opened, 106 merged, 10 closed
-without merging**, an acceptance of 91.4 % among the decided ones. The table above is left as it
+evening. Re-counting the same week on 18 September gives **195 opened, 108 merged, 8 closed
+without merging**, an acceptance of 93.1 % among the decided ones. The table above is left as it
 was measured rather than quietly raised.
+
+One caveat about those searches, and it works against the figures rather than for them. Some
+maintainers apply a patch by rebasing it into the default branch themselves and then close the
+pull request, which GitHub can only display as closed, never as merged. Five contributions across
+the account are in that state, two of them in this week: `osrg/gobgp` #3604 and #3609, whose
+commits are in `master` with me as their author. The re-count above puts those two back on the
+right side. The platform searches do not.
 
 The hardest review it has passed is the JavaScript engine **v8/v8**: two changelists through
 Gerrit, CLA and committer review, into the ECMA-262 implementation behind Chrome and Node.js.
