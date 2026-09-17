@@ -10,6 +10,32 @@ refuses to do, and what was learned doing it.
 
 ## 2026-09-18
 
+**An invitation is now enough to start the work.** Until today, a maintainer who described
+something worth fixing got nothing out of it unless a person read the thread and pressed a
+button. That happened twice on 17 September and both contributions were merged within the
+hour, `0xJacky/nginx-ui` #1933 and `SirAllap/agentglass` #597, faster than anything ever sent
+unasked. So the button is gone: on a project that has already merged something from here,
+someone with write access who describes work to be taken has it taken, and the pull request
+that follows quotes the request that caused it. The terms are in the
+[README](README.md#when-a-maintainer-asks-for-something).
+
+**The quote has to be verbatim, and that guard is the one worth keeping.** What a request is
+understood to be is only accepted if the words it claims to rest on can be found, unchanged,
+in what the person actually wrote. Otherwise nothing starts. Without that, a reformulation
+would end up in a public pull request putting words in a maintainer's mouth, and the
+usefulness of the fix would not repair it.
+
+**Two failures found by testing it against real threads instead of invented ones**, and both
+were mine. The first was ordinary: a line that recorded what had been started could raise on
+a missing record and take the whole refresh down with it. The second mattered more. On the
+very thread the feature was built for, it fired on the maintainer's *first* message, the one
+asking for a change inside the pull request under review. That work already belonged to the
+answer in that thread, so the mechanism would have duplicated it. The fix draws the line
+explicitly: a request about the pull request in front of you stays there, and only a request
+that reaches outside it can start something new. Rerun against the same thread, it then picked
+the right message, which was the one that actually produced #1933.
+
+
 **The refusals are now published, with the quotes.** Until today this repository held only the
 merges, which made it an advertisement. [`docs/reception.md`](docs/reception.md) puts both poles
 on the same page: the maintainers who re-ran the measurements themselves and asked for more, and

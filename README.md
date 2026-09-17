@@ -77,6 +77,41 @@ no reason is needed, and it does not expire: [opting out](docs/opt-out.md). How 
 actually reacted so far, the merges and the two refusals, with what was said in each case, is in
 [reception](docs/reception.md).
 
+## When a maintainer asks for something
+
+Since 18 September, on a project that has already merged something from this pipeline, a
+person with write access who describes work to be taken gets it taken. Not on the next pass,
+not after somebody reads the thread: the work starts and the pull request that follows quotes
+the request that caused it.
+
+What counts as asking is deliberately wider than a formal request. An explicit invitation to
+open a separate pull request counts. So does a defect mentioned in passing without being
+fixed, a series of the same kind someone says they can see, and a difficulty they say they
+are stuck on. Those are the three shapes that kept appearing in threads where the work was
+wanted and nobody had asked for it in so many words.
+
+This was built because it was measured, not because it sounded good. The two contributions
+started by hand from an invitation on 17 September, `0xJacky/nginx-ui` #1933 and
+`SirAllap/agentglass` #597, were both merged within the hour. Nothing sent unasked has ever
+moved that fast.
+
+Three conditions, all of them required:
+
+1. **Write access.** A passer-by's suggestion does not start anything, however good. A
+   project's direction belongs to the people who carry it. This is the same signal that
+   governs [opting out](docs/opt-out.md), so the same word opens the door and closes it.
+2. **A project that has already merged something.** The relationship comes before the
+   invitation is treated as one.
+3. **The request has to be quoted word for word.** If what the request is understood to be
+   cannot be found verbatim in what was written, nothing starts. A paraphrase would end up in
+   a public pull request putting words in a maintainer's mouth, and no amount of usefulness is
+   worth that.
+
+And one thing it deliberately will not do: a request about the pull request in front of you
+stays in that pull request. It never becomes a second one. Changing what you already have in
+hand is not the same act as opening something new, and only the second one needs your
+invitation.
+
 ## What comes next
 
 An agent a maintainer can call into a discussion, instead of receiving contributions nobody

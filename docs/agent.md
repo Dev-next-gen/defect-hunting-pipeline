@@ -1,7 +1,7 @@
 # The invocable agent
 
-What comes next: an agent a maintainer can call himself, inside a discussion, instead of
-receiving contributions he never asked for.
+What comes next: an agent a maintainer can call, inside a discussion, instead of receiving
+contributions nobody asked for.
 
 ```
 @Defect-Hunting-Pipeline
@@ -12,9 +12,14 @@ does not say how it is built.
 
 ## Why this is the right direction of travel
 
-Today contributions go out unsolicited. Proven, useful, but landing on someone who asked
-for nothing — and the only genuinely open question in [roadmap.md](roadmap.md) is how many
-a project accepts before it tires of them.
+Today most contributions go out unsolicited. Proven, useful, but landing on someone who
+asked for nothing — and the only genuinely open question in [roadmap.md](roadmap.md) is how
+many a project accepts before it tires of them.
+
+One half of the reversal now exists. A maintainer who describes work to be taken in a thread
+gets it taken, quoted, and answered with a contribution: see **When a maintainer asks for
+something** in the [README](../README.md). That is the invited half. What is still missing is
+the invocable half, where the project installs the agent once and calls it by name.
 
 An invocable agent reverses the direction: it has to be installed to be called. Consent is
 given once, by the project, and the question of volume dissolves. We stop knocking on the
@@ -65,9 +70,11 @@ code runs, destroyed afterwards. The token that lets the agent answer you will n
 reachable by the code it runs: that is the condition for a malicious contribution to obtain
 nothing beyond what it brought.
 
-None of this exists yet. It is designed and not built, and this document is a commitment
-rather than a description. Today the environments used to prove a defect are prepared by
-hand, one at a time, which is precisely why the agent cannot be invoked yet.
+Since 17 September that disposable environment exists and is used: someone else's code is
+built and tested inside it, it cannot reach the machines that operate this pipeline, and it
+is destroyed afterwards. What does not exist yet is the agent itself, so this document
+remains a commitment rather than a description. The part that used to be the obstacle is no
+longer the obstacle.
 
 ## What is written at the bottom of every message
 
@@ -77,4 +84,4 @@ do.
 
 One consequence of that name: the identity `Defect-Hunting-Pipeline` is separate from the
 account of the person who builds and operates this system. What goes wrong here does not
-implicate the contributions he makes by hand, and the reverse holds too.
+implicate the contributions made by hand under that account, and the reverse holds too.
