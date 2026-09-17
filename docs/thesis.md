@@ -35,6 +35,16 @@ nothing had had time to become one. And the delay before a decision was shrinkin
 Twenty-seven merged on the day they were opened. That is not the signature of a saturated
 reviewer.
 
+## What has since been measured
+
+On 17 September, on the last 30 merged pull requests: **16 were merged with no human
+remark in the thread at all** — review bots and continuous integration only. 14 had at
+least one. So in a majority of cases the maintainer is not the reviewer; he is the last
+link who decides.
+
+That settles half of the objection above and sharpens the other half. The scarce resource
+is not the reading. It is the decision — and a decision rests on trust, not on attention.
+
 ## The question that is actually open
 
 None of this proves the model scales, because of one thing the numbers cannot see: the pipeline

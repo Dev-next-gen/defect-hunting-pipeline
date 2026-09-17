@@ -59,13 +59,26 @@ Every pull request says where it came from, in one sentence, in the body:
 That line is not optional, and it is not marketing. A maintainer deciding how much of their
 attention to spend is entitled to know what they are reading.
 
+## What comes next
+
+An agent a maintainer can call into a discussion, instead of receiving contributions nobody
+asked for: **[`@Defect-Hunting-Pipeline`](docs/agent.md)**. It has to be installed to be
+called, so consent is given once, by the project. It will never ask for write access to
+your repository, and it refuses to publish a vulnerability, to claim without proof, and to
+take instructions from the content it reads.
+
 ## The rest
 
-- [Thesis](docs/thesis.md) — why the bottleneck everyone expects is not the one that shows up,
-  and the one open question that decides whether any of this scales.
+- [Journal](JOURNAL.md) — what this system becomes, dated, with the fact that prompted each
+  change and what was expected of it.
+- [Thesis](docs/thesis.md) — why the bottleneck everyone expects is not the one that shows
+  up, and what we now measure about it.
 - [Evidence](docs/evidence.md) — the cases behind the claims, with links.
 - [Disclosure](docs/disclosure.md) — what happens when a finding should not be published.
-- [Roadmap](docs/roadmap.md) — what would have to be true for this to run at a different size.
+- [Agent](docs/agent.md) — the invocable agent: what it does, what it refuses, what it will
+  never ask for.
+- [Roadmap](docs/roadmap.md) — what would have to be true for this to run at a different
+  size.
 
 ## What this repository is not
 
