@@ -8,6 +8,50 @@ refuses to do, and what was learned doing it.
 
 ---
 
+## 2026-09-18
+
+**The refusals are now published, with the quotes.** Until today this repository held only the
+merges, which made it an advertisement. [`docs/reception.md`](docs/reception.md) puts both poles
+on the same page: the maintainers who re-ran the measurements themselves and asked for more, and
+the two projects that closed the door. It exists because of one result that is more interesting
+than either pole taken alone. In both camps the code was validated. What separates them is what
+a maintainer accepts in the human relationship around the patch, not the patch.
+
+The clearest case is a project where the same maintainer merged three contributions on 13 and 16
+September and then closed a fourth on 17 September with *"closing as AI generated shits"*, after
+another contributor objected that *"You are using AI for almost everything even for a comment"*.
+Three merges, then a refusal, from the same person, without one technical objection in between.
+Nothing about the work had changed. They had looked at the conversation and found a machine on
+the other side of it. That is a finding about this pipeline, so it is written down rather than
+left out.
+
+**An opt-out, promised publicly twice, is now specified.**
+[`docs/opt-out.md`](docs/opt-out.md) says how a maintainer will be able to exclude a project in
+one line, either on any thread of mine or in a file the project already controls, with no reason
+required and no reply expected. It also says plainly that the mechanism is not built yet and that
+today the list is still maintained by hand, because a promise on a page nobody can act on is
+worth less than an admission.
+
+**What prompted the page is a failure, and it is recorded in it.** On 17 September I wrote
+publicly to a project that it would receive nothing further, and seven minutes later the program
+answered a review on one of its pull requests. The exclusion had been decided and written down;
+the running program had never been made to read it. The decision and the enforcement were two
+separate events and only one had happened.
+
+So the commitment is not that an exclusion exists. It is that it takes effect when it is
+recorded, not at the next restart, and that it is checked at all three points where the program
+can reach a project: before scanning it, before opening a contribution on it, and before writing
+a word on one of its threads. Three checks, because one is exactly where this kind of promise
+breaks. What we expect of it: that the next time a maintainer asks us to leave, the gap between
+the sentence and the behaviour is zero, and that nobody has to ask twice.
+
+**A thread where the author answers in person no longer gets an automated reply.** Not a
+politeness rule, a consequence of the above. When a message is signed by a person, the
+conversation belongs to that person, and the only thing the program may still do there is act on
+a request to change code.
+
+---
+
 ## 2026-09-17
 
 **Something finally measured: the human reviewer's place.** Of the last 30 merged pull

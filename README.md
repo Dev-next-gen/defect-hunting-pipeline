@@ -59,6 +59,11 @@ Every pull request says where it came from, in one sentence, in the body:
 That line is not optional, and it is not marketing. A maintainer deciding how much of their
 attention to spend is entitled to know what they are reading.
 
+And a maintainer who would rather receive none of it is entitled to that too. One line is enough,
+no reason is needed, and it does not expire: [opting out](docs/opt-out.md). How projects have
+actually reacted so far, the merges and the two refusals, with what was said in each case, is in
+[reception](docs/reception.md).
+
 ## What comes next
 
 An agent a maintainer can call into a discussion, instead of receiving contributions nobody
@@ -74,6 +79,10 @@ take instructions from the content it reads.
 - [Thesis](docs/thesis.md) — why the bottleneck everyone expects is not the one that shows
   up, and what we now measure about it.
 - [Evidence](docs/evidence.md) — the cases behind the claims, with links.
+- [Reception](docs/reception.md) — how projects receive this, the refusals included, with the
+  quotes.
+- [Opting out](docs/opt-out.md) — how a maintainer excludes a project, and what is not built
+  yet.
 - [Disclosure](docs/disclosure.md) — what happens when a finding should not be published.
 - [Agent](docs/agent.md) — the invocable agent: what it does, what it refuses, what it will
   never ask for.
