@@ -59,11 +59,15 @@ contribution is recorded once and for all.
 
 ## Where things run, and with what
 
-Building and testing someone else's code means executing it. That happens in a disposable
-environment, with no access to our credentials, with no network egress while the code runs,
-destroyed afterwards. The token that lets the agent answer you is never reachable by the
-code it runs: that is the condition for a malicious contribution to obtain nothing beyond
-what it brought.
+Building and testing someone else's code means executing it. That will happen in a
+disposable environment, with no access to our credentials, with no network egress while the
+code runs, destroyed afterwards. The token that lets the agent answer you will never be
+reachable by the code it runs: that is the condition for a malicious contribution to obtain
+nothing beyond what it brought.
+
+None of this exists yet. It is designed and not built, and this document is a commitment
+rather than a description. Today the environments used to prove a defect are prepared by
+hand, one at a time, which is precisely why the agent cannot be invoked yet.
 
 ## What is written at the bottom of every message
 
