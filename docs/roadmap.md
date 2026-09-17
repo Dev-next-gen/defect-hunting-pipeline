@@ -20,9 +20,14 @@ not fall.
 
 ## 2. Measure how much of the review is already automated
 
-Of the pull requests that merged, what fraction had **no human review at all** before a person
-pressed merge? That single percentage decides whether the maintainer is a reviewer or a rubber
-stamp, and therefore whether the thesis holds or is an artefact of small numbers.
+**Answered on 17 September, on the last 30 merged pull requests: 16 merged with no human remark
+in the thread at all**, review bots and continuous integration only. 14 had at least one. The
+reading of a patch is, in a majority of cases, already automated; what the maintainer supplies is
+the decision. The detail is in [thesis.md](thesis.md).
+
+What that number does not settle: it covers 30 merges, not all of them, and it says nothing about
+the projects that never answered. It is enough to move the question from attention to trust. It is
+not enough to call the objection closed.
 
 ## 3. Replace the fixed cap with an earned one
 
@@ -30,7 +35,10 @@ If step 1 says the budget is real, the cap should come from each project's own h
 merges obtained, time to decision, remarks per patch — rather than being the same number
 everywhere. Nothing here should be built before step 1 returns a result.
 
-## 4. The wall that is legal, not social
+## 4. The walls that are not technical
+
+Two of them were expected and one was not. The legal ones were on this page from the start. The
+social one arrived on its own, and it is now the nearest item here.
 
 - **Contributor licence agreements.** These do not get waived by a platform partnership. A CLA
   binds the contributor to the foundation that owns the project — Apache, the Linux Foundation,
@@ -42,6 +50,18 @@ everywhere. Nothing here should be built before step 1 returns a result.
 - **Single-account reputation.** As long as everything originates from one identity, one bad
   incident on one project contaminates every other. This has to be addressed before volume
   increases, not after.
+
+  This stopped being hypothetical on 17 September. A project that had merged three fixes refused
+  the fourth on the grounds that the work is machine-generated, with no technical objection in
+  between, after another contributor objected to the *comments* rather than to the code. The
+  account carries that judgement everywhere, and nothing about the patches changed it. The case
+  is written out in [reception.md](reception.md).
+
+  Two things follow, in order. First, a maintainer must be able to exclude a project in one
+  line, without asking a person and without waiting: [opt-out.md](opt-out.md), promised publicly
+  and not built yet, which makes it the nearest item on this page. Second, the exclusion has to
+  bind the running system at the moment it is recorded, because on that same day the decision
+  and the behaviour were seven minutes apart in the wrong order.
 
 ## 5. Decide what is actually being sold
 

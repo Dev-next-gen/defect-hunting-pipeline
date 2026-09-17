@@ -39,11 +39,24 @@ reviewer.
 
 On 17 September, on the last 30 merged pull requests: **16 were merged with no human
 remark in the thread at all** — review bots and continuous integration only. 14 had at
-least one. So in a majority of cases the maintainer is not the reviewer; he is the last
+least one. So in a majority of cases the maintainer is not the reviewer; they are the last
 link who decides.
 
 That settles half of the objection above and sharpens the other half. The scarce resource
 is not the reading. It is the decision — and a decision rests on trust, not on attention.
+
+## The second axis, found the hard way
+
+The risk formulated below is about rate: past some number of patches, patience runs out. On
+17 September a project produced a refusal that has nothing to do with rate and nothing to do
+with correctness. The same maintainer merged three fixes and then closed the fourth as
+AI-generated, after a contributor objected not to the code but to the comments. Four patches is
+not a flood.
+
+So what a project extends is not only patience per patch. It is a judgement about what is on the
+other side of the pull request, and that judgement can be withdrawn at any rate, including after
+a run of merges. It is also invisible in the acceptance rate, which is why these cases are
+recorded one by one rather than averaged: [reception.md](reception.md).
 
 ## The question that is actually open
 
@@ -58,10 +71,13 @@ So the honest formulation of the remaining risk is not about attention. It is ab
 > acceptance rate falls for reasons that have nothing to do with whether the patches are
 > correct.
 
-If that is false, the constraint on this kind of system is legal rather than social — the
-contributor licence agreements, mostly — and the engineering is the easy part. If it is true,
-then what has to be bought or earned is **relationship per project**, and no amount of compute
-substitutes for it.
+If that is false, the remaining constraints are mostly legal — the contributor licence
+agreements — and the engineering is the easy part. If it is true, then what has to be bought or
+earned is **relationship per project**, and no amount of compute substitutes for it.
+
+Either way, the section above already shows that the social constraint does not wait for a high
+rate to appear. So the rate hypothesis is worth testing for what it sizes, not because a negative
+result would leave only paperwork in the way.
 
 That is a testable question and it has not been tested yet. The experiment is the first item of
 the [roadmap](roadmap.md).
