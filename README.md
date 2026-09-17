@@ -23,16 +23,22 @@ public GitHub data by anyone who wants to.
 | | |
 |---|---|
 | Agent runs | **357** over 151 hours |
-| Pull requests opened, proven, written up | **181** across **102** repositories |
+| Pull requests opened, proven, written up | **181** across **103** repositories |
 | Merged | **83**, in **44** projects nobody here maintains |
 | Closed without merging | **7** |
 | Acceptance among decided pull requests | **92.2 %** |
 | Cost | **$909** total, **$10.95** per merged fix |
-| Runs that find nothing | **29 %** — they are included in the cost above |
+| Hunting runs that end with no pull request | **14 %** — they are included in the cost above |
 
 Checkable: [merged](https://github.com/pulls?q=is%3Amerged+author%3ADev-next-gen) ·
 [closed without merging](https://github.com/pulls?q=is%3Apr+is%3Aclosed+is%3Aunmerged+author%3ADev-next-gen).
 Those searches cover the whole account, so they include work that predates the pipeline.
+
+Those figures were counted on 16 September at about 18:00 UTC, as this page was being written,
+which is why they stop mid-day rather than at midnight: 14 more pull requests went out that
+evening. Re-counting the same week on 18 September gives **195 opened, 106 merged, 10 closed
+without merging**, an acceptance of 91.4 % among the decided ones. The table above is left as it
+was measured rather than quietly raised.
 
 The hardest review it has passed is the JavaScript engine **v8/v8**: two changelists through
 Gerrit, CLA and committer review, into the ECMA-262 implementation behind Chrome and Node.js.

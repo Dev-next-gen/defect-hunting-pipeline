@@ -22,7 +22,7 @@ one hour and seventeen minutes from the first objection to the merge.
 Three commits in the end — `3595a9c`, then `03308da`, then `59ce31b`. The patch that landed is
 not the patch that was opened, and the difference came out of that exchange. The maintainer
 spent about fifteen minutes of real attention on a fix that had been through two rounds of
-review before he approved it.
+review before approving it.
 
 ## A review with no human in it at all
 
@@ -39,12 +39,15 @@ flake before anything had confirmed it. Rather than accept the benefit of the do
 pipeline re-ran the same job at the same commit, `1d4e981`, nothing changed in between, and
 came back with `Tests run: 140, Failures: 0, Errors: 0` — which settled it.
 
-> Thanks for confirming — the part-6 re-run coming back fully green at the exact same commit is
-> exactly the signature of a test-isolation flake rather than something your diff introduced.
+> Thanks for confirming [...] the part-6 re-run coming back fully green (`Tests run: 140,
+> Failures: 0, Errors: 0`) at the exact same commit is exactly the signature of a test-isolation
+> flake rather than something your diff introduced, and it settles the "why 99 rows" question
+> well enough for this PR's purposes.
 > — DanielLeens
 
 This is the case worth dwelling on. The automation did not consume a maintainer's judgement.
-It **supplied** a fact that would otherwise have cost him an hour, about his own project's CI.
+It **supplied** a fact that would otherwise have cost the maintainer an hour, about their own
+project's CI.
 
 ## Where it gets refused
 
