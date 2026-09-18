@@ -84,11 +84,24 @@ maintainer keeps the count himself, in the last line of every message:
 
 > Nine releases from your pipeline this week.
 
-He does not take them on trust either. Before merging the ninth he merged `main` into the branch in
-a scratch worktree, ran the full suite, then brute-forced the arithmetic both ways for every frame
-in two hours at 29.97 and 59.94, 648,000 conversions, and found that his own measurement against
-DaVinci Resolve and the patch agree on the same number. That is what a proof is for: not to be
-believed, to be re-derived.
+He does not take them on trust either, and that turns out to be the pattern rather than the
+exception. Three maintainers, on three unrelated projects, did the same thing before accepting a
+fix: they re-derived the proof instead of believing it.
+
+- **samuelgursky**, before merging the ninth, merged `main` into the branch in a scratch worktree,
+  ran the full suite, then brute-forced the arithmetic both ways for every frame in two hours at
+  29.97 and 59.94, 648,000 conversions, and found his own measurement against DaVinci Resolve and
+  the patch agree on the same number.
+- **ChuckHend**, on `pgmq` #593, opened his answer with *"I was able to reproduce"* and merged one
+  minute later.
+- **SirAllap**, on `agentglass`, re-ran the measurements rather than take the table on trust, put
+  each defect back one at a time to confirm the new guard caught it, and checked the two limits the
+  pull request declared about itself.
+
+None of them argued about where the finding came from. They ran it. That is what a proof is for:
+not to be believed, to be re-run. A patch that arrives with one turns a question of trust into a
+question of arithmetic, and arithmetic is the only part of this a stranger can settle alone. The
+cases, with the refusals beside them, are in [reception](docs/reception.md).
 
 ## When a maintainer asks for something
 
