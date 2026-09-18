@@ -10,6 +10,17 @@ refuses to do, and what was learned doing it.
 
 ## 2026-09-18
 
+**Three maintainers, three projects, the same gesture: they re-ran the proof.** Recorded because it
+was not designed for and it is the strongest result this repository holds. `SirAllap` re-ran the
+measurements and put each defect back one at a time. `samuelgursky` brute-forced 648,000
+conversions in both directions before merging the ninth fix of his week. And tonight `ChuckHend`
+opened his answer on `pgmq` #593 with *“I was able to reproduce”*, then merged one minute later.
+
+None of them argued about where the finding came from. They ran it. A patch that arrives with a
+reproduction turns a question of trust into a question of arithmetic, and arithmetic is the only
+part of this a stranger can settle alone. Written up in [`reception.md`](docs/reception.md).
+
+
 **A correction to this journal's own accuracy pass.** Earlier today this entry recorded that a
 quote attributed to a maintainer, *“Seven releases from your pipeline this week, each with a test
 that fails on the old code”*, could not be found and had therefore been written by us. That

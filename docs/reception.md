@@ -12,6 +12,17 @@ That sentence is the whole document. Everything below is the evidence for it.
 
 ## Accepted
 
+One thing runs through every entry below, and it was not designed for. Three maintainers, on three
+unrelated projects, did the same thing before accepting: they re-derived the proof instead of
+trusting it. `SirAllap` re-ran the measurements and put each defect back one at a time.
+`samuelgursky` brute-forced 648,000 conversions both ways. `ChuckHend` reproduced the failure
+himself and said so in the first line of his answer. None of them asked for permission to doubt,
+and none of them had to: the reproduction was in the pull request.
+
+That is what a proof is for. Not to be believed, to be re-run. A patch that arrives with one turns
+a question of trust into a question of arithmetic, which is the only part of this a stranger can
+settle on his own.
+
 **SirAllap, agentglass.** Two pull requests, both merged in a morning, the second closing a gap
 the first had left. The maintainer did something rarer than approving: re-ran the measurements instead
 of taking the table on trust, put each defect back one at a time to confirm the new guard caught
@@ -55,6 +66,14 @@ plainly that nothing more was needed in that pull request, and invited a separat
 cases that design did not cover. That follow-up was opened and merged within the hour. An invitation is
 worth more than an approval, because it means the next contribution is expected rather than
 tolerated.
+
+**ChuckHend, pgmq.** One sentence, and it is the one that matters most in this document:
+
+> Hey @Dev-next-gen, I was able to reproduce. Thanks for the PR, this is a good fix.
+
+Merged one minute later. The defect was that insert notifications never fired for a queue whose
+name was not all lowercase. What the sentence shows is not enthusiasm, it is method: the first
+thing the maintainer did with the reproduction was run it.
 
 **hartwork, libexpat.** Approved, then asked for one change: the commit author had to read
 `Leo Camus <...>` rather than `leoca <...>`, to match the file headers. The commit was amended,
