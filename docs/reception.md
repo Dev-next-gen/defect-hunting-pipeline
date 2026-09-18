@@ -29,16 +29,25 @@ And, about the decision behind the patch:
 Worth keeping, because neither sentence is about the code. Both are about whether the thing on
 the other side of the pull request can be trusted to report against itself.
 
-**samuelgursky, davinci-resolve-mcp.** Seven merges in one week, each one cut into a release the
-same day: v4.6.4, v4.7.1, v4.7.2, v4.7.3, v4.7.5, v4.7.8, v4.7.9. The answer each time began the same
-way, and that sameness is the point:
+**samuelgursky, davinci-resolve-mcp.** Nine merges in one week, each one cut into a release the
+same day. The answer began the same way every time, and that sameness is the point:
 
-> Merged as-is and released as v4.7.9.
+> Merged as-is and released as v4.7.10.
 
-On one of them, where a fix had slipped past both an earlier contribution of ours and their own
-review, they wrote: *"thank you for saying plainly that it slipped past both of us."* A project
-that ships within hours is the clearest evidence that a proof arriving with the patch removes
-work rather than adding it.
+The maintainer kept his own count, in the last line of each message, and the sequence is the
+measurement:
+
+> four releases from your pipeline today (#240) · Six releases from your pipeline in two days
+> now, each with a test that fails on the old code (#242) · Seven releases from your pipeline this
+> week (#246) · Eight (#247) · Nine releases from your pipeline this week (#248)
+
+He does not take the work on trust either. Before merging the ninth, he merged `main` into the
+branch in a scratch worktree, ran the full suite, and then brute-forced the arithmetic both ways
+for every frame in two hours at 29.97 and 59.94, 648,000 conversions, to check that no round trip
+violated itself. His conclusion was that his own measurement against Resolve and ours agree on the
+same number. A project that ships within hours is the clearest evidence that a proof arriving with
+the patch removes work rather than adding it, and a maintainer who re-derives it anyway is the
+reason it keeps being worth arriving with one.
 
 **0xJacky, nginx-ui.** Five pull requests proposed, five merged. The interesting one is the
 fourth: the maintainer described a different design they had chosen for the same problem, said

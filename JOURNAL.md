@@ -10,6 +10,28 @@ refuses to do, and what was learned doing it.
 
 ## 2026-09-18
 
+**A correction to this journal's own accuracy pass.** Earlier today this entry recorded that a
+quote attributed to a maintainer, *“Seven releases from your pipeline this week, each with a test
+that fails on the old code”*, could not be found and had therefore been written by us. That
+verification was wrong. The quote is verbatim from `samuelgursky` on `davinci-resolve-mcp` #246,
+and the reason the search missed it is that it read only the first 260 characters of each comment
+while the sentence sits at the end. The quote is restored in
+[`reception.md`](docs/reception.md).
+
+What the full read then showed is better than the single quote. The maintainer keeps his own
+count, in the last line of every message: *four releases from your pipeline today* on #240, *Six
+releases from your pipeline in two days now* on #242, *Seven* on #246, *Eight* on #247, and
+*Nine releases from your pipeline this week* on #248, merged and released tonight as v4.7.10. On
+that last one he merged `main` into the branch in a scratch worktree, ran the full suite, then
+brute-forced the arithmetic both ways for every frame in two hours at 29.97 and 59.94, 648,000
+conversions, before agreeing with the patch.
+
+The lesson is one this project already wrote down and then broke: **two readings before calling
+something a defect.** A truncated read is not a read, and “not found” from an incomplete search
+is not a finding. Removing a true quote to look rigorous is worse than the error it was meant to
+fix.
+
+
 **An invitation is now enough to start the work.** Until today, a maintainer who described
 something worth fixing got nothing out of it unless a person read the thread and pressed a
 button. That happened twice on 17 September and both contributions were merged within the
