@@ -77,6 +77,19 @@ no reason is needed, and it does not expire: [opting out](docs/opt-out.md). How 
 actually reacted so far, the merges and the two refusals, with what was said in each case, is in
 [reception](docs/reception.md).
 
+The clearest measure is not the hardest review, it is a project that ships. On
+**samuelgursky/davinci-resolve-mcp**, nine fixes from this pipeline were merged and released in
+one week, each one cut into a version the same day, the last of them tonight as v4.7.10. The
+maintainer keeps the count himself, in the last line of every message:
+
+> Nine releases from your pipeline this week.
+
+He does not take them on trust either. Before merging the ninth he merged `main` into the branch in
+a scratch worktree, ran the full suite, then brute-forced the arithmetic both ways for every frame
+in two hours at 29.97 and 59.94, 648,000 conversions, and found that his own measurement against
+DaVinci Resolve and the patch agree on the same number. That is what a proof is for: not to be
+believed, to be re-derived.
+
 ## When a maintainer asks for something
 
 Since 18 September, on a project that has already merged something from this pipeline, a
