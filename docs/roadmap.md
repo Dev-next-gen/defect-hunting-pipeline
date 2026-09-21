@@ -71,3 +71,27 @@ routes the dangerous findings away from the public tracker instead of toward it.
 
 The second one has already produced more value than the first, at close to zero cost. That is
 the current bet, and the numbers in [thesis.md](thesis.md) are what it rests on.
+
+
+## 6. From an issue, not just a mention: the pipeline as a maintainer's tool
+
+The invocable agent above waits to be called into a discussion. The next step turns it into
+something a maintainer runs against their own backlog. On an issue in a repository where the
+agent has been installed, a maintainer with write access invokes it, and the pipeline takes the
+issue as the target: it reproduces the reported behaviour, locates the root cause, and — only
+if it can prove one — opens the fix as a pull request against that issue, linked with
+`Fixes #n`, carrying the same disclosure line and the same human-review sign-off as any other
+contribution the pipeline sends.
+
+Neither gate changes. No pull request without a reproduction that fails before the patch and
+passes after, in the project's own environment. And a root cause that turns out to be
+security-relevant is routed to the project's private channel, never posted back on the public
+issue. The consent here is the cleanest the system has: the maintainer asked, on their own issue,
+in their own repository, with the agent installed once by the project.
+
+What has to be true first. The reproduction has to be built from the issue's own description, not
+from the code alone — an issue is a claim, not yet a failing test, and the gap between the two
+is where a wrong fix would come from. And the agent has to say plainly when it cannot reproduce or
+cannot find the cause, and stop there, rather than open a pull request on a guess. That is the same
+honesty the rest of the pipeline is held to; it is the whole reason a maintainer could let it near
+their tracker at all.
