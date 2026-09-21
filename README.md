@@ -38,7 +38,7 @@ Those figures were counted on 16 September at about 18:00 UTC, as this page was 
 which is why they stop mid-day rather than at midnight: 14 more pull requests went out that
 evening. Re-counting the same week on 18 September gives **195 opened, 108 merged, 8 closed
 without merging**, an acceptance of 93.1 % among the decided ones. The table above is left as it
-was measured rather than quietly raised.
+was measured rather than quietly raised. As of 22 September the whole account stands at **181 merged of 289 pull requests opened** — still one person, on hardware he owns, still the same gate. The weeks since have kept landing: a merged HLS URL-resolution fix on [Cloudstream](https://github.com/recloudstream/cloudstream/pull/3174) (*“great fix and test … a very cool project”*), and NASA's F´/FPP maintainers signing off on [issues](https://github.com/nasa/fpp/issues/1116) and pull requests with *“Good catch!”* and *“Looks good!”*.
 
 One caveat about those searches, and it works against the figures rather than for them. Some
 maintainers apply a patch by rebasing it into the default branch themselves and then close the
